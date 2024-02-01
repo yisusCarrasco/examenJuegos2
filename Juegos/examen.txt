@@ -1,0 +1,13 @@
+library(Rgamer)
+juego3 <- normal_form(
+jugadores = c("ALIC", "PUNTBLAC"),
+payoffs1 = "−A^2 + A*(25 − B)",
+payoffs2 = = "−B^2 + B(26 − A)",
+par1_lim = c(1, 10),
+par2_lim = c(1, 10),
+pars = c("A", "B"))
+
+
+juego2 <- normal_form(
+	
+)
