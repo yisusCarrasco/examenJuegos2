@@ -1,13 +1,36 @@
 library(Rgamer)
-juego3 <- normal_form(
+#Planteamos el código del juego n°1 
+juego1 <- normal_form(
 jugadores = c("ALIC", "PUNTBLAC"),
 payoffs1 = "−A^2 + A*(25 − B)",
 payoffs2 = = "−B^2 + B(26 − A)",
 par1_lim = c(1, 10),
 par2_lim = c(1, 10),
 pars = c("A", "B"))
+#Veremos los resultados luego en R
+s_juego1 <- solve_nfg (juego1)
 
 
+#Planteamos en código el juego n°2
 juego2 <- normal_form(
-	
+jugadores = c("MX","MY"),
+payoffs1 = "−3X^2 + X(55 − Y)",
+payoffs2 = "−5Y^2 + Y(69 − X)",
+par1_lim = c(10,30),
+par2_lim = c(9,29),
+pars = c("X","Y")
 )
+#Veremos los resultados luego en R
+s_juego2 <- solve_nfg(juego2)
+
+
+#Planteamiento en código del juego n°3
+juego3<- normal_form(
+jugadores = c("MX","MY"),
+payoffs1 = "−3X^2 + X(50 − Y)",
+payoffs2 = "−5Y^2 + Y(60 − X)",
+par1_lim = c(10,30),
+par2_lim = c(10,30),
+pars = c("X","Y"))
+#Veremos los resultados luego en R
+s_juego3 <- solve_nfg(juego3)
